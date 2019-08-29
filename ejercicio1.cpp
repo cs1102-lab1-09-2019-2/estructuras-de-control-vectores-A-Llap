@@ -15,7 +15,9 @@ vector<int> leerConsola() {
     do {
       cout << "Ingrese un entero positivo, escriba -1 si ya no quiere ingresar mas numeros:";
       cin >> x;
+      if (x != -1){
       nums.insert(nums.end(), x);
+      }
 
     } while (x != -1);
     return nums;
